@@ -1,0 +1,93 @@
+services:
+  zomboid-server:
+    image: ghcr.io/meshi-team/project-zomboid-server:latest
+    container_name: zomboid-server
+    ports:
+      - 16261:16261/udp
+      - 16262:16262/udp
+    volumes:
+      - ./data:/root/Zomboid # persist saves/configs/logs
+      - ./workshop:/root/.local/share/Steam/steamapps/workshop # persist workshop mods
+    environment:
+      - SERVER_NAME=kraken_n_stir
+      - ADMIN_PASSWORD=admin
+      - PORT=16261
+      - SERVER_MEMORY=4096m
+      - ADMIN_USERNAME=admin
+      - PVP=false
+      - MAX_PLAYERS=5
+      - PASSWORD=iamgay
+      
+      - SLEEP_ALLOWED=true
+      - SLEEP_NEEDED=true
+
+      # Zombie settings
+      - ZOMBIES=5
+      - DISTRIBUTION=1
+      - SPEED=4
+      - STRENGTH=3
+      - TOUGHNESS=3
+      - TRANSMISSION=4
+      - MORTALITY=7
+      - REANIMATE=4
+      - COGNITION=3
+      - CRAWL_UNDER_VEHICLE=2
+      - MEMORY=6
+      - SIGHT=5
+      - HEARING=5
+      - THUMP_ON_CONSTRUCTION=false
+      
+      # Loot settings
+      - FOOD_LOOT=5
+      - CANNED_FOOD_LOOT=5
+      - LITTERATURE_LOOT=5
+      
+      # World settings
+      - WATER_SHUT=9
+      - ELEC_SHUT=9
+      - ALARM=2
+      - FUEL_STATION_GAS=8
+      - EROSION_SPEED=4
+      - EROSION_DAYS=-1
+
+      # Character settings
+      - STATS_DECREASE=4
+      - END_REGEN=2      
+      - STARTER_KIT=true
+      - CHARACTER_FREE_POINTS=100
+      - CONSTRUCTION_BONUS_POINTS=5
+      - INJURY_SEVERITY=1
+      - CLOTHING_DEGRADATION=2
+      - MULTI_HIT_ZOMBIES=true
+      - XP_MULTIPLIER=100.0
+      - XP_MULTIPLIER_AFFECTS_PASSIVE=true
+
+      # Car settings
+      - ZOMBIE_ATTRACTION_MULTIPLIER=0.7
+      - CAR_SPAWN_RATE=4
+      - CHANCE_HAS_GAS=3
+      - INITIAL_GAS=5
+      - CAR_GAS_CONSUMPTION=0.5
+      - CAR_GENERAL_CONDITION=3
+      - CAR_DAMAGE_ON_IMPACT=2
+
+      # Others no clue where they are from
+      - FOOD_ROT_SPEED=4
+      - HOURS_FOR_CORPSE_REMOVAL=100
+      - DAYS_FOR_ROTTEN_FOOD_REMOVAL=1
+      - ATTACK_BLOCK_MOVEMENTS=false
+      - ALLOW_MINI_MAP=true
+      - ALLOW_WORLD_MAP=true
+      - ACTIVE_ONLY=2
+      - TRIGGER_HOUSE_ALARM=true
+      - FOLLOW_SOUND_DISTANCE=50
+
+      # Moding self-hosted
+      # - WORKSHOP_COLLECTIONS=3798460773
+      # - MODS=42_VSGirlBodyNSFW;damnlib;69charger;69fordMustang;69fordMustangExtra;70dodge;70roadRunner;73fordFalcon;73fordFalconPS;78lamboCountach;79camaro;82firebird;82firebirdKITT;82porsche911;91fordLTD;91fordRanger;92jeepYJ;92jeepYJJP18;92nissanGTR;95impreza;96lancerEVO;BunnySuitsEnhanced;CHStatusHUD;CVI;CarRoofFix;CleanHotBar;NeatUI_Framework;CleanUI;CompanionDogs;CyesPushDoors;DetailedDescriptionsForOccupationsAndTraits;ETO_B;EquipClothingWhileMoving;FantasyWorkshopVS42_4.0;FenceSheets;FittedBarricades;FittedSheets;GasPumpIndicator;GydeTraitMags;HereGoesTheSun;Horse;JumboTreeIndoorFix;KI5campers;LifestyleHobbies;Military_Tool_Kit;MiniHealthPanel;ModLoadOrderSorter_b42;ModernStatus;Neat_Building_Buildables_SESCompat;Neat_Building_Railings;Neat_Building_UIOnly;OpenAllContainers;P4PickingMeister;Project_Seasons_B42_NORUST;ProximityInventory;QNWDebugMenuB42;RealisticDash;SCP_Foundation_Pack;SPNCC;SPNCCDetails;SPNCCDetailsHD;SPNCCFaces;SandboxSettings;SkullysZombieCollision;TVRadio_ReInvented;TacHold;TacHold AR;TacHold Pistol;TacHold Pistol AR;ThisIsYourLife;TombBody;TombBodyCompat;TrueLineOfSight;Tuna_GunRacks;Tuna_EquipmentRacks;U.S. M998 Humvee by Papa_Chad;UsefulBarrelsMP;VanillaVehiclesAnimated;VVA_PikamyDelight;VVA_cullseats;VVA_snapDoors;VVA_transparentWindows;VanillaFoodsExpanded;VanillaGearExpanded;VehicleRepairOverhaul;VanillaOutfitsExpanded;B42ModTrans_CN;B42Trans_CN
+      # Moding CatShark
+      - WORKSHOP_COLLECTIONS=3798979847
+      - MODS=UnifiedCarryWeightFramework;1299328280/ToadTraits;1299328280/ToadTraitsDisablePrepared;1299328280/ToadTraitsDisableSpec;42_VSGirlBodyNSFW;damnlib;49powerWagon;59meteor;63Type2Van;67commando;68firebird;69camaro;69mini;69mini_ItalianJob;69mini_MrBean;69mini_PitbullSpecial;70barracuda;70dodge;75grandPrix;76chevyKseries;76chevyKserieseExpanded;78amgeneralM35A2;78amgeneralM35A2extra;78amgeneralM49A2C;78amgeneralM50A3;78amgeneralM62;80manKat1;81deloreanDMC12;81deloreanDMC12BTTF;82jeepJ10;82jeepJ10t;82oshkoshM911;83amgeneralM923;83amgeneralM923extra;84gageV300;84merc;86fordE150;86fordE150dnd;86fordE150expanded;86fordE150mm;86fordE150pd;86oshkoshP19A;87buickRegal;87chevySuburban;87fordB700;87toyotaMR2;88chevyS10;89dodgeCaravan;89fordBronco;89trooper;90bmwE30;90fordF350ambulance;90pierceArrow;91geoMetro;91range;92amgeneralM998;92amgeneralM998extra;92fordCVPI;92nissanGTR;93chevySuburban;93chevySuburbanExpanded;93fordElgin;93fordF350;93fordTaurus;93mustangSSP;93townCar;97bushmaster;99fordCVPI;BackpackSystemB42;BetterLockpickingContinued;BladesmithSystemB42;BuildablePump;CompanionDogs;CD_StartWithDog;CVI;CVLS;CleanHotBar;ECTO1;FantasyWorkshopVS42_4.0;GydeTraitMags;InjuredZombiesStumble;JumboTreeIndoorFix;KI5campers;ModernFirearmsSystem;NeatUI_Framework;Neat_Crafting;P4PumpPury;PropaneExchangeCabinet;ProximityInventory;RebalancedPropMoving;TrueWeight;VanillaFoodsExpanded;VehicleRepairOverhaul;B42Trans_CN
+
+
+
