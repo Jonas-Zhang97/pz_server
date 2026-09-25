@@ -21,72 +21,220 @@ services:
       - SLEEP_ALLOWED=true
       - SLEEP_NEEDED=true
 
-      # Zombie settings
-      - ZOMBIES=5
-      - DISTRIBUTION=1
-      - SPEED=4
-      - STRENGTH=3
-      - TOUGHNESS=3
-      - TRANSMISSION=4
-      - MORTALITY=7
-      - REANIMATE=4
-      - COGNITION=3
-      - CRAWL_UNDER_VEHICLE=2
-      - MEMORY=6
-      - SIGHT=5
-      - HEARING=5
-      - THUMP_ON_CONSTRUCTION=false
-      - ACTIVE_ONLY=2
+      # # Zombie settings
+      # - ZOMBIES=5
+      # - DISTRIBUTION=1
+      # - SPEED=4
+      # - STRENGTH=3
+      # - TOUGHNESS=3
+      # - TRANSMISSION=4
+      # - MORTALITY=7
+      # - REANIMATE=4
+      # - COGNITION=3
+      # - CRAWL_UNDER_VEHICLE=2
+      # - MEMORY=6
+      # - SIGHT=5
+      # - HEARING=5
+      # - THUMP_ON_CONSTRUCTION=false
+      # - ACTIVE_ONLY=2
       
-      # Loot settings
-      - FOOD_LOOT=5
-      - CANNED_FOOD_LOOT=5
-      - LITTERATURE_LOOT=5
+      # # Loot settings
+      # - FOOD_LOOT=5
+      # - CANNED_FOOD_LOOT=5
+      # - LITTERATURE_LOOT=5
       
-      # World settings
-      - WATER_SHUT=9
-      - ELEC_SHUT=9
-      - ALARM=2
-      - FUEL_STATION_GAS=8
-      - EROSION_SPEED=4
-      - EROSION_DAYS=-1
+      # # World settings
+      # - WATER_SHUT=9
+      # - ELEC_SHUT=9
+      # - ALARM=2
+      # - FUEL_STATION_GAS=8
+      # - EROSION_SPEED=4
+      # - EROSION_DAYS=-1
 
-      # Character settings
-      - STATS_DECREASE=4
-      - END_REGEN=2      
+      # # Character settings
+      # - STATS_DECREASE=4
+      # - END_REGEN=2      
+      # - STARTER_KIT=true
+      # - CHARACTER_FREE_POINTS=100
+      # - CONSTRUCTION_BONUS_POINTS=5
+      # - INJURY_SEVERITY=1
+      # - CLOTHING_DEGRADATION=2
+      # - MULTI_HIT_ZOMBIES=true
+      # - XP_MULTIPLIER=100.0
+      # - XP_MULTIPLIER_AFFECTS_PASSIVE=true
+
+      # # Car settings
+      # - ZOMBIE_ATTRACTION_MULTIPLIER=0.7
+      # - CAR_SPAWN_RATE=4
+      # - CHANCE_HAS_GAS=3
+      # - INITIAL_GAS=5
+      # - CAR_GAS_CONSUMPTION=0.5
+      # - CAR_GENERAL_CONDITION=3
+      # - CAR_DAMAGE_ON_IMPACT=2
+
+      # # Others no clue where they are from
+      # - FOOD_ROT_SPEED=4
+      # - HOURS_FOR_CORPSE_REMOVAL=100
+      # - DAYS_FOR_ROTTEN_FOOD_REMOVAL=1
+      # - ATTACK_BLOCK_MOVEMENTS=false
+      # - ALLOW_MINI_MAP=true
+      # - ALLOW_WORLD_MAP=true
+      # - ACTIVE_ONLY=2
+      # - TRIGGER_HOUSE_ALARM=true
+      # - FOLLOW_SOUND_DISTANCE=50
+
+      # Moding: Modified CatShark
+      - WORKSHOP_COLLECTIONS=3799830938
+       ## Config Catshark-26-09-23
+      - MODS=UnifiedCarryWeightFramework;1299328280/ToadTraits;42_VSGirlBodyNSFW;damnlib;49powerWagon;59meteor;63Type2Van;67commando;68firebird;69camaro;69mini;69mini_ItalianJob;69mini_MrBean;69mini_PitbullSpecial;70barracuda;70dodge;75grandPrix;76chevyKseries;76chevyKseriesExpanded;78amgeneralM35A2;78amgeneralM35A2extra;78amgeneralM49A2C;78amgeneralM50A3;78amgeneralM62;80manKat1;81deloreanDMC12;81deloreanDMC12BTTF;82jeepJ10;82jeepJ10t;82oshkoshM911;83amgeneralM923;83amgeneralM923extra;84gageV300;84merc;86fordE150;86fordE150dnd;86fordE150expanded;86fordE150mm;86fordE150pd;86oshkoshP19A;87buickRegal;87chevySuburban;87fordB700;87toyotaMR2;88chevyS10;89dodgeCaravan;89fordBronco;89trooper;90bmwE30;90fordF350ambulance;90pierceArrow;91geoMetro;91range;92amgeneralM998;92amgeneralM998extra;92fordCVPI;92nissanGTR;93chevySuburban;93chevySuburbanExpanded;93fordElgin;93fordF350;93fordTaurus;93mustangSSP;93townCar;97bushmaster;99fordCVPI;BackpackSystemB42;Bandits2;BetterLockpickingContinued;BladesmithSystemB42;BuildablePump;CompanionDogs;CD_StartWithDog;CVI;CVLS;ChuckleberryFinnAlertSystem;CleanHotBar;ECTO1;FantasyWorkshopVS42_4.0;GydeTraitMags;InjuredZombiesStumble;JumboTreeIndoorFix;KI5campers;ModernFirearmsSystem;NeatUI_Framework;Neat_Crafting;P4PumpPury;PropaneExchangeCabinet;ProximityInventory;RebalancedPropMoving;errorMagnifier;SkillRecoveryJournal;TrueWeight;VehicleRepairOverhaul;VanillaFoodsExpanded;B42Trans_CN
+      - DOLUACHECKSUM=false
+     
+      ### LEGACY ###
+      # # Config CatShark-26-09-10
+      # - MODS=UnifiedCarryWeightFramework;1299328280/ToadTraits;42_VSGirlBodyNSFW;damnlib;49powerWagon;59meteor;63Type2Van;67commando;68firebird;69camaro;69mini;69mini_ItalianJob;69mini_MrBean;69mini_PitbullSpecial;70barracuda;70dodge;75grandPrix;76chevyKseries;76chevyKseriesExpanded;78amgeneralM35A2;78amgeneralM35A2extra;78amgeneralM49A2C;78amgeneralM50A3;78amgeneralM62;80manKat1;81deloreanDMC12;81deloreanDMC12BTTF;82jeepJ10;82jeepJ10t;82oshkoshM911;83amgeneralM923;83amgeneralM923extra;84gageV300;84merc;86fordE150;86fordE150dnd;86fordE150expanded;86fordE150mm;86fordE150pd;86oshkoshP19A;87buickRegal;87chevySuburban;87fordB700;87toyotaMR2;88chevyS10;89dodgeCaravan;89fordBronco;89trooper;90bmwE30;90fordF350ambulance;90pierceArrow;91geoMetro;91range;92amgeneralM998;92amgeneralM998extra;92fordCVPI;92nissanGTR;93chevySuburban;93chevySuburbanExpanded;93fordElgin;93fordF350;93fordTaurus;93mustangSSP;93townCar;97bushmaster;99fordCVPI;BackpackSystemB42;BetterLockpickingContinued;BladesmithSystemB42;BuildablePump;CompanionDogs;CD_StartWithDog;CVI;CVLS;CleanHotBar;ECTO1;FantasyWorkshopVS42_4.0;GydeTraitMags;InjuredZombiesStumble;JumboTreeIndoorFix;KI5campers;ModernFirearmsSystem;NeatUI_Framework;Neat_Crafting;P4PumpPury;PropaneExchangeCabinet;ProximityInventory;RebalancedPropMoving;TrueWeight;VanillaFoodsExpanded;VehicleRepairOverhaul;B42Trans_CN
+      
+      # # Config: CatShark-26-09-21
+      # - MODS=UnifiedCarryWeightFramework;1299328280/ToadTraits;42_VSGirlBodyNSFW;damnlib;49powerWagon;59meteor;63Type2Van;67commando;68firebird;69camaro;69mini;69mini_ItalianJob;69mini_MrBean;69mini_PitbullSpecial;70barracuda;70dodge;75grandPrix;76chevyKseries;76chevyKseriesExpanded;78amgeneralM35A2;78amgeneralM35A2extra;78amgeneralM49A2C;78amgeneralM50A3;78amgeneralM62;80manKat1;81deloreanDMC12;81deloreanDMC12BTTF;82jeepJ10;82jeepJ10t;82oshkoshM911;83amgeneralM923;83amgeneralM923extra;84gageV300;84merc;86fordE150;86fordE150dnd;86fordE150expanded;86fordE150mm;86fordE150pd;86oshkoshP19A;87buickRegal;87chevySuburban;87fordB700;87toyotaMR2;88chevyS10;89dodgeCaravan;89fordBronco;89trooper;90bmwE30;90fordF350ambulance;90pierceArrow;91geoMetro;91range;92amgeneralM998;92amgeneralM998extra;92fordCVPI;92nissanGTR;93chevySuburban;93chevySuburbanExpanded;93fordElgin;93fordF350;93fordTaurus;93mustangSSP;93townCar;97bushmaster;99fordCVPI;BackpackSystemB42;BetterLockpickingContinued;BladesmithSystemB42;BuildablePump;CompanionDogs;CD_StartWithDog;CVI;CVLS;ChuckleberryFinnAlertSystem;CleanHotBar;ECTO1;FantasyWorkshopVS42_4.0;GydeTraitMags;InjuredZombiesStumble;JumboTreeIndoorFix;KI5campers;ModernFirearmsSystem;NeatUI_Framework;Neat_Crafting;P4PumpPury;PropaneExchangeCabinet;ProximityInventory;RebalancedPropMoving;errorMagnifier;SkillRecoveryJournal;TrueWeight;VanillaFoodsExpanded;VehicleRepairOverhaul;B42Trans_CN;
+
+      # --- General / world ---
+      - VERSION=6                      # your cfg is Build 42 (Version=6); the doc's default is 5
+      - ZOMBIES=5                      # Low
+      - DISTRIBUTION=1
+      - DAY_LENGTH=4                   # 1h30m
+      - START_YEAR=1
+      - START_MONTH=7
+      - START_DAY=9
+      - START_TIME=2
+      - WATER_SHUT=9                   # Disabled (B42 value)
+      - ELEC_SHUT=9                    # Disabled (B42 value)
+      # WATER_SHUT/ELEC_SHUT are only turned into a day count by the game client's new-game screen.
+      # A dedicated server uses these modifiers directly: service stops after world day N.
+      - WATER_SHUT_MODIFIER=2147483647 # never
+      - ELEC_SHUT_MODIFIER=2147483647  # never
+
+      # --- Loot (B42 uses the *LootNew multipliers; the old FOOD_LOOT etc. match nothing) ---
+      - FOOD_LOOT_NEW=0.8
+      - CANNED_FOOD_LOOT_NEW=0.6
+      - LITERATURE_LOOT_NEW=0.6
+      - SURVIVAL_GEARS_LOOT_NEW=0.6
+      - MEDICAL_LOOT_NEW=0.6
+      - WEAPON_LOOT_NEW=0.6
+      - RANGED_WEAPON_LOOT_NEW=1.2
+      - AMMO_LOOT_NEW=0.6
+      - MECHANICS_LOOT_NEW=0.6
+      - OTHER_LOOT_NEW=0.8
+      - LOOT_RESPAWN=1
+      - SEEN_HOURS_PREVENT_LOOT_RESPAWN=0
+
+      # --- Environment / survival ---
+      - TEMPERATURE=3
+      - RAIN=3
+      - EROSION_SPEED=4
+      - EROSION_DAYS=0
+      - GLOBAL=10.0                    # MultiplierConfig.Global (XP_MULTIPLIER is the B41 name and matches nothing)
+      - ZOMBIE_ATTRACTION_MULTIPLIER=0.8
+      - VEHICLE_EASY_USE=false
+      # FARMING and STRENGTH are set in the SandboxVars file, not here: the env replacement ignores
+      # sections, so they also overwrote MultiplierConfig.Farming/Strength and TrueWeight.Farming.
+      - COMPOST_TIME=2
+      - STATS_DECREASE=5               # Very Slow
+      - NATURE_ABUNDANCE=4
+      - ALARM=2
+      - LOCKED_HOUSES=6
       - STARTER_KIT=true
+      - NUTRITION=true
+      - FOOD_ROT_SPEED=4
+      - FRIDGE_FACTOR=5
+      - HOURS_FOR_WORLD_ITEM_REMOVAL=24.0
+      - ITEM_REMOVAL_LIST_BLACKLIST_TOGGLE=false
+      - TIME_SINCE_APO=1
+      - PLANT_RESILIENCE=2
+      - PLANT_ABUNDANCE=3
+      - END_REGEN=1
+      - HELICOPTER=2
+      - META_EVENT=2
+      - SLEEPING_EVENT=1
+      - GENERATOR_SPAWNING=4
+      - GENERATOR_FUEL_CONSUMPTION=0.1
+      - SURVIVOR_HOUSE_CHANCE=3
+      - VEHICLE_STORY_CHANCE=3
+      - ZONE_STORY_CHANCE=3
+      - ANNOTATED_MAP_CHANCE=4
       - CHARACTER_FREE_POINTS=100
       - CONSTRUCTION_BONUS_POINTS=5
+      - NIGHT_DARKNESS=3
+      - NIGHT_LENGTH=3
       - INJURY_SEVERITY=1
-      - CLOTHING_DEGRADATION=2
+      - BONE_FRACTURE=true
+      - HOURS_FOR_CORPSE_REMOVAL=108.0
+      - DECAYING_CORPSE_HEALTH_IMPACT=2
+      - BLOOD_LEVEL=3
+      - CLOTHING_DEGRADATION=3
+      - FIRE_SPREAD=true
+      - DAYS_FOR_ROTTEN_FOOD_REMOVAL=216
+      - ALLOW_EXTERIOR_GENERATOR=true
+      - MAX_FOG_INTENSITY=1
+      - MAX_RAIN_FX_INTENSITY=1
+      - ENABLE_SNOW_ON_GROUND=true
+      - ENABLE_TAINTED_WATER_TEXT=true
       - MULTI_HIT_ZOMBIES=true
-      - XP_MULTIPLIER=100.0
-      - XP_MULTIPLIER_AFFECTS_PASSIVE=true
-
-      # Car settings
-      - ZOMBIE_ATTRACTION_MULTIPLIER=0.7
-      - CAR_SPAWN_RATE=4
-      - CHANCE_HAS_GAS=3
-      - INITIAL_GAS=5
-      - CAR_GAS_CONSUMPTION=0.5
-      - CAR_GENERAL_CONDITION=3
-      - CAR_DAMAGE_ON_IMPACT=2
-
-      # Others no clue where they are from
-      - FOOD_ROT_SPEED=4
-      - HOURS_FOR_CORPSE_REMOVAL=100
-      - DAYS_FOR_ROTTEN_FOOD_REMOVAL=1
-      - ATTACK_BLOCK_MOVEMENTS=false
+      - REAR_VULNERABILITY=3
+      - ATTACK_BLOCK_MOVEMENTS=true
+      - ALL_CLOTHES_UNLOCKED=false
+      - ENABLE_POISONING=1
+      - MAGGOT_SPAWN=1
+      - LIGHT_BULB_LIFESPAN=200.0
       - ALLOW_MINI_MAP=true
       - ALLOW_WORLD_MAP=true
-      - ACTIVE_ONLY=2
-      - TRIGGER_HOUSE_ALARM=true
-      - FOLLOW_SOUND_DISTANCE=50
+      - MAP_ALL_KNOWN=true
 
-      # Moding self-hosted
-      # - WORKSHOP_COLLECTIONS=3798460773
-      # - MODS=42_VSGirlBodyNSFW;damnlib;69charger;69fordMustang;69fordMustangExtra;70dodge;70roadRunner;73fordFalcon;73fordFalconPS;78lamboCountach;79camaro;82firebird;82firebirdKITT;82porsche911;91fordLTD;91fordRanger;92jeepYJ;92jeepYJJP18;92nissanGTR;95impreza;96lancerEVO;BunnySuitsEnhanced;CHStatusHUD;CVI;CarRoofFix;CleanHotBar;NeatUI_Framework;CleanUI;CompanionDogs;CyesPushDoors;DetailedDescriptionsForOccupationsAndTraits;ETO_B;EquipClothingWhileMoving;FantasyWorkshopVS42_4.0;FenceSheets;FittedBarricades;FittedSheets;GasPumpIndicator;GydeTraitMags;HereGoesTheSun;Horse;JumboTreeIndoorFix;KI5campers;LifestyleHobbies;Military_Tool_Kit;MiniHealthPanel;ModLoadOrderSorter_b42;ModernStatus;Neat_Building_Buildables_SESCompat;Neat_Building_Railings;Neat_Building_UIOnly;OpenAllContainers;P4PickingMeister;Project_Seasons_B42_NORUST;ProximityInventory;QNWDebugMenuB42;RealisticDash;SCP_Foundation_Pack;SPNCC;SPNCCDetails;SPNCCDetailsHD;SPNCCFaces;SandboxSettings;SkullysZombieCollision;TVRadio_ReInvented;TacHold;TacHold AR;TacHold Pistol;TacHold Pistol AR;ThisIsYourLife;TombBody;TombBodyCompat;TrueLineOfSight;Tuna_GunRacks;Tuna_EquipmentRacks;U.S. M998 Humvee by Papa_Chad;UsefulBarrelsMP;VanillaVehiclesAnimated;VVA_PikamyDelight;VVA_cullseats;VVA_snapDoors;VVA_transparentWindows;VanillaFoodsExpanded;VanillaGearExpanded;VehicleRepairOverhaul;VanillaOutfitsExpanded;B42ModTrans_CN;B42Trans_CN
-      # Moding CatShark
-      - WORKSHOP_COLLECTIONS=3799830938
-      - MODS=UnifiedCarryWeightFramework;1299328280/ToadTraits;42_VSGirlBodyNSFW;damnlib;49powerWagon;59meteor;63Type2Van;67commando;68firebird;69camaro;69mini;69mini_ItalianJob;69mini_MrBean;69mini_PitbullSpecial;70barracuda;70dodge;75grandPrix;76chevyKseries;76chevyKseriesExpanded;78amgeneralM35A2;78amgeneralM35A2extra;78amgeneralM49A2C;78amgeneralM50A3;78amgeneralM62;80manKat1;81deloreanDMC12;81deloreanDMC12BTTF;82jeepJ10;82jeepJ10t;82oshkoshM911;83amgeneralM923;83amgeneralM923extra;84gageV300;84merc;86fordE150;86fordE150dnd;86fordE150expanded;86fordE150mm;86fordE150pd;86oshkoshP19A;87buickRegal;87chevySuburban;87fordB700;87toyotaMR2;88chevyS10;89dodgeCaravan;89fordBronco;89trooper;90bmwE30;90fordF350ambulance;90pierceArrow;91geoMetro;91range;92amgeneralM998;92amgeneralM998extra;92fordCVPI;92nissanGTR;93chevySuburban;93chevySuburbanExpanded;93fordElgin;93fordF350;93fordTaurus;93mustangSSP;93townCar;97bushmaster;99fordCVPI;BackpackSystemB42;BetterLockpickingContinued;BladesmithSystemB42;BuildablePump;CompanionDogs;CD_StartWithDog;CVI;CVLS;CleanHotBar;ECTO1;FantasyWorkshopVS42_4.0;GydeTraitMags;InjuredZombiesStumble;JumboTreeIndoorFix;KI5campers;ModernFirearmsSystem;NeatUI_Framework;Neat_Crafting;P4PumpPury;PropaneExchangeCabinet;ProximityInventory;RebalancedPropMoving;TrueWeight;VanillaFoodsExpanded;VehicleRepairOverhaul;B42Trans_CN
-      - DOLUACHECKSUM=false
+      # --- Vehicles ---
+      - ENABLE_VEHICLES=true
+      - CAR_SPAWN_RATE=4
+      - CHANCE_HAS_GAS=3
+      - INITIAL_GAS=6                  # Full
+      - FUEL_STATION_GAS=9             # see note 3
+      - CAR_GAS_CONSUMPTION=0.5
+      - LOCKED_CAR=4
+      - CAR_GENERAL_CONDITION=5
+      - CAR_DAMAGE_ON_IMPACT=1
+      - DAMAGE_TO_PLAYER_FROM_HIT_BY_A_CAR=1
+      - TRAFFIC_JAM=true
+      - CAR_ALARM=3
+      - PLAYER_DAMAGE_FROM_CRASH=true
+      - SIREN_SHUTOFF_HOURS=0.0
+      - RECENTLY_SURVIVOR_VEHICLES=3
+
+      # --- Zombie lore ---
+      - SPEED=4                        # Random
+      - TOUGHNESS=4                    # Random
+      - TRANSMISSION=4                 # None
+      - MORTALITY=7                    # Never
+      - REANIMATE=6                    # 1-2 weeks
+      - COGNITION=3
+      - CRAWL_UNDER_VEHICLE=5
+      - MEMORY=6                       # Random between Normal and None (B42 only)
+      - SIGHT=5                        # Random between Normal and Poor (B42 only)
+      - HEARING=5                      # Random between Normal and Poor (B42 only)
+      - THUMP_NO_CHASING=false
+      - THUMP_ON_CONSTRUCTION=false
+      - ACTIVE_ONLY=2                  # Night
+      - TRIGGER_HOUSE_ALARM=true
+      - ZOMBIES_DRAG_DOWN=true
+      - ZOMBIES_FENCE_LUNGE=true
+      - DISABLE_FAKE_DEAD=1
+
+      # --- Zombie population ---
+      - POPULATION_MULTIPLIER=0.15
+      - POPULATION_START_MULTIPLIER=0.5
+      - POPULATION_PEAK_MULTIPLIER=1.5
+      - POPULATION_PEAK_DAY=28
+      - RESPAWN_HOURS=0.0
+      - RESPAWN_UNSEEN_HOURS=0.0
+      - RESPAWN_MULTIPLIER=0.0
+      - REDISTRIBUTE_HOURS=12.0
+      - FOLLOW_SOUND_DISTANCE=70
+      - RALLY_GROUP_SIZE=20
+      - RALLY_TRAVEL_DISTANCE=20
+      - RALLY_GROUP_SEPARATION=15
+      - RALLY_GROUP_RADIUS=3
